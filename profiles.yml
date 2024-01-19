@@ -4,9 +4,9 @@ jaffle_shop: # this needs to match the profile in your dbt_project.yml file
         dev:
             type: bigquery
             method: service-account
-            keyfile: /Users/edaza/Applications/DBT/jaffle_shop/dbt-user-creds.json # replace this with the full path to your keyfile
+            keyfile: /Users/edaza/Applications/DBT/dbt-user-creds.json # replace this with the full path to your keyfile
             project: logical-signer-411619 # Replace this with your project id (find it here: https://console.cloud.google.com/iam-admin/settings?project=[this is your project id])
-            dataset: jaffle_shop # Replace this with dbt_your_name, e.g. dbt_bilbo
+            dataset: jaffle_shop # Replace this "schema" with dbt_your_name, e.g. dbt_bilbo
                 # (find it in BigQuery Studio here: https://console.cloud.google.com/bigquery?project=[this is your project id]&ws=!1m4!1m3!3m2!1s[this is your project id]!2s[this is your dataset name])
             threads: 1
             timeout_seconds: 300
